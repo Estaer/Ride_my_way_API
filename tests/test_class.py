@@ -1,6 +1,6 @@
 import unittest
 import json
-from rideapp import APP
+from run import APP
 
 class TestClass(unittest.TestCase):
     def setUp(self):
