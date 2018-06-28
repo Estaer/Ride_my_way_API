@@ -1,7 +1,7 @@
 class Ride: 
 
-    def __init__(self, offer_id, driver_id, meetingpoint, departure, destination, slots):
-        self.offer_id = offer_id
+    def __init__(self, rideId, driver_id, meetingpoint, departure, destination, slots):
+        self.rideId = rideId
         self.driver_id = driver_id
         self.meetingpoint = meetingpoint
         self.departure = departure
