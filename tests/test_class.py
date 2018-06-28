@@ -2,7 +2,7 @@ import unittest
 import json
 import sys,os
 sys.path.append(os.path.pardir)
-from api.run import APP
+from run import APP
 
 class TestClass(unittest.TestCase):
     def setUp(self):
