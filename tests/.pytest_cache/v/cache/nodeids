@@ -1,6 +1,0 @@
-[
-  "test_class.py::TestClass::test_Get_endpoints",
-  "test_class.py::TestClass::test_Get_singleride",
-  "test_class.py::TestClass::test_make_request",
-  "test_class.py::TestClass::test_post_rideoffer"
-]
