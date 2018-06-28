@@ -12,20 +12,20 @@ class All_Rides:
     def get_rides(self):
         return [ride.__dict__ for ride in self.rides] 
 
-    def get_single_ride(self, offer_id):
+    def get_single_ride(self, rideId):
 
         for ride in self.rides:
-            if ride.offer_id == offer_id:
-                return ride.__dict__
+            if ride.rideId == rideId:
+                return {'message':'Here are the details for this ride','ride': ride.__dict__}
         else:
             return {'message':'Ride doesnot exist'}
     
-    def post_ride(self, offer_id, driver_id, meetingpoint, departure, destination, slots):
-        new_ride = Ride(offer_id, driver_id, meetingpoint, departure, destination, slots)
+    def post_ride(self, rideId, driver_id, meetingpoint, departure, destination, slots):
+        new_ride = Ride(rideId, driver_id, meetingpoint, departure, destination, slots)
         self.rides.append(new_ride)
     
-    def make_request(self, offer_id, request_id, status):
-        new_request = MakeRequest(offer_id, request_id, status)
+    def make_request(self, rideId, request_id, status):
+        new_request = MakeRequest(rideId, request_id, status)
         self.riderequest.append(new_request)
 
 

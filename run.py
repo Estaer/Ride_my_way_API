@@ -8,9 +8,9 @@ APP = Flask(__name__)
 API = Api(APP)
    
 
-API.add_resource(Rides, '/api/v1/rides/')
-API.add_resource(RideOffer, '/api/v1/rides/<string:offer_id>')
-API.add_resource(RideRequest, '/api/v1/rides/<string:offer_id>/requests')
+API.add_resource(Rides, '/api/v1/rides')
+API.add_resource(RideOffer, '/api/v1/rides/<string:rideId>')
+API.add_resource(RideRequest, '/api/v1/rides/<string:rideId>/requests')
 
 if __name__ == '__main__':
     APP.run(port=5000, debug=True)

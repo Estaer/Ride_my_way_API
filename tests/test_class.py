@@ -26,7 +26,7 @@ class TestClass(unittest.TestCase):
         # valid status code
         response = self.myapp.post('/api/v1/rides',
         data = json.dumps(dict(
-            offer_id ='R06', 
+            rideId ='R06', 
             driver_id = 'DO2',
             meetingpoint = 'buziga',
             departure = '16/06/18 9:00am',
