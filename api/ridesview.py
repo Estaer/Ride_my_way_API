@@ -12,7 +12,7 @@ class Rides(Resource):
     def post(self):
         data = request.get_json() 
         new_ride = rides_object.post_ride(data['rideId'], data['driver_id'], data['meetingpoint'], data['departure'], data['destination'], data['slots'])
-        return {'message': 'Offer created'}, 201
+        return {'message': 'Ride Offer created'}, 201
 
 class RideOffer(Resource):
     """class for a Rideoffer resource"""
@@ -26,5 +26,5 @@ class RideRequest(Resource):
     
     def post(self, rideId):
         data = request.get_json() 
-        new_request = rides_object.make_request(rideId, data['request_id'], 'PENDING')
+        new_request = rides_object.make_request(rideId, data['request_id'], 'pending')
         return {'message': 'Request Made'}, 201
