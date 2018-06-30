@@ -5,6 +5,8 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/d2a46e47a2692ba42333/test_coverage)](https://codeclimate.com/github/Estaer/Ride_my_way_API/test_coverage)
 
+[![Coverage Status](https://coveralls.io/repos/github/Estaer/Ride_my_way_API/badge.svg)](https://coveralls.io/github/Estaer/Ride_my_way_API)
+
 # Ride-My-Way
 #RideMyWay Project
 
