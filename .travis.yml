@@ -12,4 +12,6 @@ install:
 script:
   - cd test
   - pytest 
+  
+after_success:
   - coveralls
