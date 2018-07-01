@@ -11,10 +11,9 @@ install:
 
 # command to run tests
 script:
-  - cd test
   - nosetests --with-coverage --cover-test --cover-package=test
   - coverage report
-  - cd ..
+
   
 after_success:
   - coveralls
